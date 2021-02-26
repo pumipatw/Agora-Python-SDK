@@ -62,9 +62,9 @@ class _SwigNonDynamicMeta(type):
 
 
 import weakref
-
+membershipFlag = "The membership flag"
 class IString(object):
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
 
     def __init__(self, *args, **kwargs):
         raise AttributeError("No constructor defined - class is abstract")
@@ -1563,7 +1563,7 @@ r""" Apple AirPlay."""
 class LastmileProbeOneWayResult(object):
     r""" The uplink or downlink last-mile network probe test result."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     packetLossRate = property(_agorartc.LastmileProbeOneWayResult_packetLossRate_get, _agorartc.LastmileProbeOneWayResult_packetLossRate_set, doc=r""" The packet loss rate (%).""")
     jitter = property(_agorartc.LastmileProbeOneWayResult_jitter_get, _agorartc.LastmileProbeOneWayResult_jitter_set, doc=r""" The network jitter (ms).""")
@@ -1579,7 +1579,7 @@ _agorartc.LastmileProbeOneWayResult_swigregister(LastmileProbeOneWayResult)
 class LastmileProbeResult(object):
     r""" The uplink and downlink last-mile network probe test result."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     state = property(_agorartc.LastmileProbeResult_state_get, _agorartc.LastmileProbeResult_state_set, doc=r""" The state of the probe test.""")
     uplinkReport = property(_agorartc.LastmileProbeResult_uplinkReport_get, _agorartc.LastmileProbeResult_uplinkReport_set, doc=r""" The uplink last-mile network probe test result.""")
@@ -1596,7 +1596,7 @@ _agorartc.LastmileProbeResult_swigregister(LastmileProbeResult)
 class LastmileProbeConfig(object):
     r""" Configurations of the last-mile network probe test."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     probeUplink = property(_agorartc.LastmileProbeConfig_probeUplink_get, _agorartc.LastmileProbeConfig_probeUplink_set, doc=r"""
     Sets whether or not to test the uplink network. Some users, for example, the audience in a `LIVE_BROADCASTING` channel, do not need such a test:
@@ -1625,7 +1625,7 @@ class AudioVolumeInfo(object):
     An array containing the user ID and volume information for each speaker.
     """
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     uid = property(_agorartc.AudioVolumeInfo_uid_get, _agorartc.AudioVolumeInfo_uid_set, doc=r"""    User ID of the speaker. The uid of the local user is 0.""")
     volume = property(_agorartc.AudioVolumeInfo_volume_get, _agorartc.AudioVolumeInfo_volume_set, doc=r""" The volume of the speaker. The volume ranges between 0 (lowest volume) and 255 (highest volume).""")
@@ -1650,7 +1650,7 @@ _agorartc.AudioVolumeInfo_swigregister(AudioVolumeInfo)
 class RtcStats(object):
     r""" Statistics of the channel."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     duration = property(_agorartc.RtcStats_duration_get, _agorartc.RtcStats_duration_set, doc=r"""   Call duration (s), represented by an aggregate value.""")
     txBytes = property(_agorartc.RtcStats_txBytes_get, _agorartc.RtcStats_txBytes_set, doc=r"""     Total number of bytes transmitted, represented by an aggregate value.""")
@@ -1808,7 +1808,7 @@ r""" 3: A failure occurs. See the details in code."""
 class LocalVideoStats(object):
     r""" Statistics of the local video stream."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     sentBitrate = property(_agorartc.LocalVideoStats_sentBitrate_get, _agorartc.LocalVideoStats_sentBitrate_set, doc=r"""
      Bitrate (Kbps) sent in the reported interval, which does not include
@@ -1851,7 +1851,7 @@ _agorartc.LocalVideoStats_swigregister(LocalVideoStats)
 class RemoteVideoStats(object):
     r""" Statistics of the remote video stream."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     uid = property(_agorartc.RemoteVideoStats_uid_get, _agorartc.RemoteVideoStats_uid_set, doc=r""" User ID of the remote user sending the video streams.""")
     delay = property(_agorartc.RemoteVideoStats_delay_get, _agorartc.RemoteVideoStats_delay_set, doc=r"""
@@ -1892,7 +1892,7 @@ _agorartc.RemoteVideoStats_swigregister(RemoteVideoStats)
 class LocalAudioStats(object):
     r""" Audio statistics of the local user"""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     numChannels = property(_agorartc.LocalAudioStats_numChannels_get, _agorartc.LocalAudioStats_numChannels_set, doc=r""" The number of channels.""")
     sentSampleRate = property(_agorartc.LocalAudioStats_sentSampleRate_get, _agorartc.LocalAudioStats_sentSampleRate_set, doc=r""" The sample rate (Hz).""")
@@ -1909,7 +1909,7 @@ _agorartc.LocalAudioStats_swigregister(LocalAudioStats)
 class RemoteAudioStats(object):
     r""" Audio statistics of a remote user"""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     uid = property(_agorartc.RemoteAudioStats_uid_get, _agorartc.RemoteAudioStats_uid_set, doc=r""" User ID of the remote user sending the audio streams.""")
     quality = property(_agorartc.RemoteAudioStats_quality_get, _agorartc.RemoteAudioStats_quality_set, doc=r""" Audio quality received by the user: #QUALITY_TYPE.""")
@@ -1943,7 +1943,7 @@ _agorartc.RemoteAudioStats_swigregister(RemoteAudioStats)
 class VideoDimensions(object):
     r"""Video dimensions."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     width = property(_agorartc.VideoDimensions_width_get, _agorartc.VideoDimensions_width_set, doc=r""" Width (pixels) of the video.""")
     height = property(_agorartc.VideoDimensions_height_get, _agorartc.VideoDimensions_height_set, doc=r""" Height (pixels) of the video.""")
@@ -1958,7 +1958,7 @@ _agorartc.VideoDimensions_swigregister(VideoDimensions)
 class VideoEncoderConfiguration(object):
     r""" Video encoder configurations."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     dimensions = property(_agorartc.VideoEncoderConfiguration_dimensions_get, _agorartc.VideoEncoderConfiguration_dimensions_set, doc=r""" The video frame dimensions (px) used to specify the video quality and measured by the total number of pixels along a frame's width and height: VideoDimensions. The default value is 640 x 360.""")
     frameRate = property(_agorartc.VideoEncoderConfiguration_frameRate_get, _agorartc.VideoEncoderConfiguration_frameRate_set, doc=r"""
@@ -2048,7 +2048,7 @@ DEFAULT_MIN_BITRATE = cvar.DEFAULT_MIN_BITRATE
 class TranscodingUser(object):
     r""" The video and audio properties of the user displaying the video in the CDN live. Agora supports a maximum of 17 transcoding users in a CDN streaming channel."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     uid = property(_agorartc.TranscodingUser_uid_get, _agorartc.TranscodingUser_uid_set, doc=r""" User ID of the user displaying the video in the CDN live.""")
     x = property(_agorartc.TranscodingUser_x_get, _agorartc.TranscodingUser_x_set, doc=r""" Horizontal position (pixel) of the video frame relative to the top left corner.""")
@@ -2098,7 +2098,7 @@ class RtcImage(object):
     The properties of the watermark and background images.
     """
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
 
     def __init__(self):
@@ -2116,7 +2116,7 @@ _agorartc.RtcImage_swigregister(RtcImage)
 class LiveStreamAdvancedFeature(object):
     r""" The configuration for advanced features of the RTMP streaming with transcoding."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
 
     def __init__(self):
@@ -2137,7 +2137,7 @@ _agorartc.LiveStreamAdvancedFeature_swigregister(LiveStreamAdvancedFeature)
 class LiveTranscoding(object):
     r""" A struct for managing CDN live audio/video transcoding settings."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     width = property(_agorartc.LiveTranscoding_width_get, _agorartc.LiveTranscoding_width_set, doc=r"""
      The width of the video in pixels. The default value is 360.
@@ -2219,7 +2219,7 @@ _agorartc.LiveTranscoding_swigregister(LiveTranscoding)
 class CameraCapturerConfiguration(object):
     r""" Camera capturer configuration."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     preference = property(_agorartc.CameraCapturerConfiguration_preference_get, _agorartc.CameraCapturerConfiguration_preference_set, doc=r""" Camera capturer preference settings. See: #CAPTURER_OUTPUT_PREFERENCE.""")
 
@@ -2233,7 +2233,7 @@ _agorartc.CameraCapturerConfiguration_swigregister(CameraCapturerConfiguration)
 class InjectStreamConfig(object):
     r""" Configuration of the injected media stream."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     width = property(_agorartc.InjectStreamConfig_width_get, _agorartc.InjectStreamConfig_width_set, doc=r""" Width of the injected stream in the live interactive streaming. The default value is 0 (same width as the original stream).""")
     height = property(_agorartc.InjectStreamConfig_height_get, _agorartc.InjectStreamConfig_height_set, doc=r""" Height of the injected stream in the live interactive streaming. The default value is 0 (same height as the original stream).""")
@@ -2273,7 +2273,7 @@ _agorartc.InjectStreamConfig_swigregister(InjectStreamConfig)
 class ChannelMediaInfo(object):
     r""" The definition of ChannelMediaInfo."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     channelName = property(_agorartc.ChannelMediaInfo_channelName_get, _agorartc.ChannelMediaInfo_channelName_set, doc=r""" The channel name.""")
     token = property(_agorartc.ChannelMediaInfo_token_get, _agorartc.ChannelMediaInfo_token_set, doc=r""" The token that enables the user to join the channel.""")
@@ -2289,7 +2289,7 @@ _agorartc.ChannelMediaInfo_swigregister(ChannelMediaInfo)
 class ChannelMediaRelayConfiguration(object):
     r""" The definition of ChannelMediaRelayConfiguration."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     srcInfo = property(_agorartc.ChannelMediaRelayConfiguration_srcInfo_get, _agorartc.ChannelMediaRelayConfiguration_srcInfo_set, doc=r"""
      Pointer to the information of the source channel: ChannelMediaInfo. It contains the following members:
@@ -2334,7 +2334,7 @@ r""" Motionless content. Choose this option if you prefer sharpness or when you 
 class Rectangle(object):
     r""" The relative location of the region to the screen or window."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     x = property(_agorartc.Rectangle_x_get, _agorartc.Rectangle_x_set, doc=r""" The horizontal offset from the top-left corner.""")
     y = property(_agorartc.Rectangle_y_get, _agorartc.Rectangle_y_set, doc=r""" The vertical offset from the top-left corner.""")
@@ -2351,7 +2351,7 @@ _agorartc.Rectangle_swigregister(Rectangle)
 class Rect(object):
     r"""DEPRECATED** Definition of the rectangular region."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     top = property(_agorartc.Rect_top_get, _agorartc.Rect_top_set, doc=r""" Y-axis of the top line.""")
     left = property(_agorartc.Rect_left_get, _agorartc.Rect_left_set, doc=r""" X-axis of the left line.""")
@@ -2368,7 +2368,7 @@ _agorartc.Rect_swigregister(Rect)
 class WatermarkOptions(object):
     r""" The options of the watermark image to be added."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     visibleInPreview = property(_agorartc.WatermarkOptions_visibleInPreview_get, _agorartc.WatermarkOptions_visibleInPreview_set, doc=r"""
      Sets whether or not the watermark image is visible in the local video preview:
@@ -2394,7 +2394,7 @@ _agorartc.WatermarkOptions_swigregister(WatermarkOptions)
 class ScreenCaptureParameters(object):
     r""" Screen sharing encoding parameters."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     dimensions = property(_agorartc.ScreenCaptureParameters_dimensions_get, _agorartc.ScreenCaptureParameters_dimensions_set, doc=r"""
     The maximum encoding dimensions of the shared region in terms of width * height.
@@ -2445,7 +2445,7 @@ _agorartc.ScreenCaptureParameters_swigregister(ScreenCaptureParameters)
 class VideoCanvas(object):
     r""" Video display settings of the VideoCanvas class."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     view = property(_agorartc.VideoCanvas_view_get, _agorartc.VideoCanvas_view_set, doc=r""" Video display window (view).""")
     renderMode = property(_agorartc.VideoCanvas_renderMode_get, _agorartc.VideoCanvas_renderMode_set, doc=r""" The rendering mode of the video view. See RENDER_MODE_TYPE""")
@@ -2480,7 +2480,7 @@ _agorartc.VideoCanvas_swigregister(VideoCanvas)
 class BeautyOptions(object):
     r""" Image enhancement options."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     LIGHTENING_CONTRAST_LOW = _agorartc.BeautyOptions_LIGHTENING_CONTRAST_LOW
     r""" Low contrast level."""
@@ -2503,7 +2503,7 @@ _agorartc.BeautyOptions_swigregister(BeautyOptions)
 class UserInfo(object):
     r"""The UserInfo struct."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     uid = property(_agorartc.UserInfo_uid_get, _agorartc.UserInfo_uid_set, doc=r"""The user ID.""")
     userAccount = property(_agorartc.UserInfo_userAccount_get, _agorartc.UserInfo_userAccount_set, doc=r"""The user account.""")
@@ -2530,7 +2530,7 @@ r"""India."""
 AREA_CODE_GLOB = _agorartc.AREA_CODE_GLOB
 r"""(Default) Global."""
 class RtcEngineBridge(object):
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
 
     def initEventHandler(self, eventHandler):
@@ -5261,7 +5261,7 @@ class RtcEngineBridge(object):
 _agorartc.RtcEngineBridge_swigregister(RtcEngineBridge)
 
 class IRtcEngineEventHandler(object):
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
 
     def __init__(self):
@@ -5272,7 +5272,7 @@ class IRtcEngineEventHandler(object):
 _agorartc.IRtcEngineEventHandler_swigregister(IRtcEngineEventHandler)
 
 class RtcEngineEventHandlerBase(IRtcEngineEventHandler):
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     __swig_destroy__ = _agorartc.delete_RtcEngineEventHandlerBase
 
@@ -6496,7 +6496,7 @@ class RtcEngineEventHandlerBase(IRtcEngineEventHandler):
 _agorartc.RtcEngineEventHandlerBase_swigregister(RtcEngineEventHandlerBase)
 
 class IChannelEventHandler(object):
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
 
     def __init__(self):
@@ -6507,7 +6507,7 @@ class IChannelEventHandler(object):
 _agorartc.IChannelEventHandler_swigregister(IChannelEventHandler)
 
 class RtcChannelEventHandlerBase(IChannelEventHandler):
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     __swig_destroy__ = _agorartc.delete_RtcChannelEventHandlerBase
 
@@ -7022,7 +7022,7 @@ def createVideoCanvas(ptr):
 def createRtcEngineBridge():
     return _agorartc.createRtcEngineBridge()
 class VideoFrameObserver(object):
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     __swig_destroy__ = _agorartc.delete_VideoFrameObserver
 
@@ -7054,7 +7054,7 @@ def registerVideoFrameObserver(rtc, frameObserver):
 def unregisterVideoFrameObserver(rtc, frameObserver):
     return _agorartc.unregisterVideoFrameObserver(rtc, frameObserver)
 class APICaseHandler(object):
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
 
     def handleAPICase(self, apiType, paramter):
@@ -7100,7 +7100,7 @@ def CompareAndDumpChannelEventTestResult(caseFilePath, dumpFilePath, rtcChannel,
 def LogChannelEventCase(eventType, parameter):
     return _agorartc.LogChannelEventCase(eventType, parameter)
 class IChannel(object):
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
 
     def __init__(self, *args, **kwargs):
         raise AttributeError("No constructor defined - class is abstract")
@@ -7116,7 +7116,7 @@ _agorartc.IChannel_swigregister(IChannel)
 class ChannelMediaOptions(object):
     r""" The channel media options."""
 
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
     __repr__ = _swig_repr
     autoSubscribeAudio = property(_agorartc.ChannelMediaOptions_autoSubscribeAudio_get, _agorartc.ChannelMediaOptions_autoSubscribeAudio_set, doc=r"""
     Determines whether to subscribe to audio streams when the user joins the channel:
@@ -7143,7 +7143,7 @@ class ChannelMediaOptions(object):
 _agorartc.ChannelMediaOptions_swigregister(ChannelMediaOptions)
 
 class RtcChannelBridge(object):
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
 
     def __init__(self, *args, **kwargs):
         raise AttributeError("No constructor defined")
@@ -8084,7 +8084,7 @@ class RtcChannelBridge(object):
 _agorartc.RtcChannelBridge_swigregister(RtcChannelBridge)
 
 class VideoDeviceManager(object):
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
 
     def __init__(self, *args, **kwargs):
         raise AttributeError("No constructor defined")
@@ -8116,7 +8116,7 @@ class VideoDeviceManager(object):
 _agorartc.VideoDeviceManager_swigregister(VideoDeviceManager)
 
 class AudioPlaybackDeviceManager(object):
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
 
     def __init__(self, *args, **kwargs):
         raise AttributeError("No constructor defined")
@@ -8169,7 +8169,7 @@ class AudioPlaybackDeviceManager(object):
 _agorartc.AudioPlaybackDeviceManager_swigregister(AudioPlaybackDeviceManager)
 
 class AudioRecordingDeviceManager(object):
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=membershipFlag)
 
     def __init__(self, *args, **kwargs):
         raise AttributeError("No constructor defined")
